@@ -1,13 +1,13 @@
 const fetchQuotes = require('./fetchQuotes.js');
 
 describe ('fetchQuotes', () => {
-  it('Should return a quote as an obj w/ name, text and image ', () => {
+  it('Should return a quote as an obj w/ name, text and image ', async () => {
     const expected = [{
-      name: 'name',
-      text: 'text',
-      image: 'image',
+      character: expect.any(String),
+      quote: expect.any(String),
+      image: expect.any(String),
     }];
-    const actual =  fetchQuotes();
-    expect (expected).toEqual(actual);
+    const actual = await fetchQuotes();
+    expect (actual).toEqual(expected);
   });
 });
