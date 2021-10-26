@@ -4,5 +4,3 @@ const capitalizeAndFilter = (arrayOfStrings) => {
   return newArr.filter(word => !word.startsWith('F'));
 };
 module.exports = capitalizeAndFilter;
-    
-  
