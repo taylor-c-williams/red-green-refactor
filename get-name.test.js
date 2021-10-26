@@ -1,0 +1,8 @@
+const getName = require('./get-name.js');
+
+describe ('getName', () => {
+  it('Should return the name property of an object', () => {
+    const spot = { name: 'spot', age: 5, weight: '20 lbs' };
+    expect (spot).toEqual('spot');
+  });
+});
