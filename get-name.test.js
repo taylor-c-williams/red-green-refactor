@@ -1,4 +1,4 @@
-const getName = require('./get-name.js');
+const getName = require('./getName.js');
 
 describe ('getName', () => {
   it('Should return the name property of an object', () => {
